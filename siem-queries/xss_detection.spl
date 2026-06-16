@@ -1,0 +1,6 @@
+## siem-queries/splunk/xss_detection.spl
+
+index=main sourcetype=access_combined
+| search uri="<script>" OR uri="alert(" OR uri="%3Cscript%3E" OR uri="onerror=" OR uri="javascript:"
+| stats count by clientip, uri
+| sort -count
