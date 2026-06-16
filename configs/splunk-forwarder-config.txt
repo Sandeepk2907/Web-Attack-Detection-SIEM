@@ -1,4 +1,4 @@
-## Run these commands on the DVWA target machine (VM2)
+# Run these commands on the DVWA target machine (VM2)
 
 ## Step 1: Install Splunk Universal Forwarder
 sudo dpkg -i splunkforwarder.deb
