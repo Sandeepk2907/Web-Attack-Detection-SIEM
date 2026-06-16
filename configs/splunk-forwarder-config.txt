@@ -1,16 +1,16 @@
-Run these commands on the DVWA target machine (VM2)
+## Run these commands on the DVWA target machine (VM2)
 
-Step 1: Install Splunk Universal Forwarder
+## Step 1: Install Splunk Universal Forwarder
 sudo dpkg -i splunkforwarder.deb
 
-Step 2: Start forwarder
+## Step 2: Start forwarder
 sudo /opt/splunkforwarder/bin/splunk start --accept-license
 
-Step 3: Point to Splunk server
+## Step 3: Point to Splunk server
 sudo /opt/splunkforwarder/bin/splunk add forward-server SPLUNK_VM_IP:9997
 
-Step 4: Monitor Apache logs
+## Step 4: Monitor Apache logs
 sudo /opt/splunkforwarder/bin/splunk add monitor /var/log/apache2/access.log
 
-Step 5: Restart
+## Step 5: Restart
 sudo /opt/splunkforwarder/bin/splunk restart
