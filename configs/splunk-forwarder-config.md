@@ -1,6 +1,6 @@
 # Web Attack Detection in SIEM – Splunk Universal Forwarder Setup
 
-This project configures Splunk Universal Forwarder on the DVWA target machine (VM2) and forwards Apache access logs to the Splunk server.
+Run these commands on the DVWA target machine (VM2)
 
 ---
 
