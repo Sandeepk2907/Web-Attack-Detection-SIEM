@@ -15,5 +15,4 @@ $_DVWA['db_port']     = '3306';
 
 $_DVWA['default_security_level'] = 'low';
 
-?>
 ```
