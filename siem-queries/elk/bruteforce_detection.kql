@@ -1,0 +1,3 @@
+## siem-queries/elk/bruteforce_detection.kql
+
+response: (401 OR 403) AND url: (login)
