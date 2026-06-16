@@ -30,7 +30,7 @@ Replace `SPLUNK_VM_IP` with your Splunk machine IP.
 Example:
 
 ```bash
-sudo /opt/splunkforwarder/bin/splunk add forward-server 192.168.56.101:9997
+sudo /opt/splunkforwarder/bin/splunk add forward-server SPLUNK_VM_IP:9997
 ```
 
 ## Step 4: Monitor Apache Logs
