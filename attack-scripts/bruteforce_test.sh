@@ -1,6 +1,4 @@
 
-##  attack-scripts/bruteforce_test.sh
-```bash
 #!/bin/bash
 # Brute Force Simulation using Hydra
 # Usage: ./bruteforce_test.sh <target-ip>
@@ -21,5 +19,4 @@ hydra -l admin \
   -V -f
 
 echo "[+] Done. Check SIEM for brute force alerts."
-```
 
