@@ -1,6 +1,4 @@
 
----
-
 ##  configs/dvwa-config.php
 ```php
 <?php
@@ -19,5 +17,3 @@ $_DVWA['default_security_level'] = 'low';
 
 ?>
 ```
-
----
