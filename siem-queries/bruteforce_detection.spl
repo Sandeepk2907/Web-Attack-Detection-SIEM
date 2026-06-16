@@ -1,0 +1,8 @@
+##  siem-queries/splunk/bruteforce_detection.spl
+
+index=main sourcetype=access_combined
+| search uri="login" (status=401 OR status=403 OR status=200)
+| bucket _time span=60s
+| stats count by clientip, _time
+| where count >= 10
+| sort -count
