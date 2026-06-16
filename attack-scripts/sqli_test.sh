@@ -1,6 +1,4 @@
 
----
-
 ##  attack-scripts/sqli_test.sh
 ```bash
 #!/bin/bash
@@ -27,4 +25,3 @@ sqlmap -u "http://$TARGET/DVWA/vulnerabilities/sqli/?id=1&Submit=Submit" \
 echo "[+] Done. Check SIEM for SQLi alerts."
 ```
 
----
