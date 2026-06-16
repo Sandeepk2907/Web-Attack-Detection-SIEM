@@ -19,12 +19,47 @@ This project demonstrates how to:
 Kali (Attacker) → DVWA Target → Apache Logs → Splunk/ELK → Alerts
 
 ##  Folder Structure
-- `attack-scripts/` — Shell scripts to simulate attacks
-- `siem-queries/splunk/` — Splunk SPL detection queries
-- `siem-queries/elk/` — Kibana KQL detection queries
-- `configs/` — Config files for Filebeat and Splunk Forwarder
-- `docs/` — Setup guide and architecture diagram
-- `screenshots/` — Project screenshots
+
+```plaintext
+web-attack-detection-siem/
+│
+├── README.md
+│
+├── docs/
+│   ├── setup-guide.md
+│   └── architecture.png
+│
+├── attack-scripts/
+│   ├── sqli_test.sh
+│   ├── xss_test.sh
+│   ├── bruteforce_test.sh
+│   └── traversal_test.sh
+│
+├── siem-queries/
+│   ├── splunk/
+│   │   ├── sqli_detection.spl
+│   │   ├── xss_detection.spl
+│   │   ├── bruteforce_detection.spl
+│   │   └── error_spike_detection.spl
+│   │
+│   └── elk/
+│       ├── sqli_detection.kql
+│       ├── xss_detection.kql
+│       └── bruteforce_detection.kql
+│
+├── configs/
+│   ├── filebeat.yml
+│   ├── splunk-forwarder-config.txt
+│   └── dvwa-config.php
+│
+|── screenshots/
+|   ├── dvwa-setup.png
+|   ├── splunk-dashboard.png
+│
+└── report/
+    └── Final_Project_Report.pdf
+```
+
 
 ##  Setup Guide
 See [docs/setup-guide.md](docs/setup-guide.md)
