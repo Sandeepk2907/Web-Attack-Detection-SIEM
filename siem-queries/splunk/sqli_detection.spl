@@ -1,0 +1,7 @@
+##  siem-queries/splunk/sqli_detection.spl
+
+index=main sourcetype=access_combined
+| search uri="UNION" OR uri="SELECT" OR uri="'OR'" OR uri="1=1" OR uri="--"
+| stats count by clientip, uri, status
+| where count > 5
+| sort -count
