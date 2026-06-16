@@ -1,0 +1,8 @@
+##  siem-queries/splunk/error_spike_detection.spl
+
+index=main sourcetype=access_combined
+| search status>=400
+| bucket _time span=1m
+| stats count by _time, status, clientip
+| where count > 20
+| sort -_time
