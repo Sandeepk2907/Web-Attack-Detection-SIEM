@@ -1,0 +1,17 @@
+
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/apache2/access.log
+    - /var/log/apache2/error.log
+
+fields:
+  environment: dvwa-lab
+  log_type: apache_access
+
+output.elasticsearch:
+  hosts: ["YOUR_ELK_VM_IP:9200"]
+
+setup.kibana:
+  host: "YOUR_ELK_VM_IP:5601"
