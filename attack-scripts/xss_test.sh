@@ -1,5 +1,3 @@
-##  attack-scripts/xss_test.sh
-
 
 # XSS Simulation using curl
 
