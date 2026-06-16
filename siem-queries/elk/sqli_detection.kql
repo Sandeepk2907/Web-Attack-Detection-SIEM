@@ -1,0 +1,3 @@
+##  siem-queries/elk/sqli_detection.kql
+
+message: (UNION OR SELECT OR 1=1 OR OR+1 OR DROP+TABLE)
