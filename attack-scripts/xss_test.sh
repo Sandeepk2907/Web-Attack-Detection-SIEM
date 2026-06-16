@@ -1,8 +1,7 @@
 ##  attack-scripts/xss_test.sh
 
-#!/bin/bash
+
 # XSS Simulation using curl
-# Usage: ./xss_test.sh <target-ip>
 
 TARGET=$1
 
@@ -25,4 +24,4 @@ curl -s "http://$TARGET/DVWA/vulnerabilities/xss_r/?name=<img src=x onerror=aler
 echo "[+] Done. Check SIEM for XSS alerts."
 
 
----
+
