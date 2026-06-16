@@ -1,4 +1,3 @@
-## attack-scripts/traversal_test.sh
 
 #!/bin/bash
 # Directory Traversal Simulation
