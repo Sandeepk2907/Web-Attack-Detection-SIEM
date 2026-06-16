@@ -57,7 +57,7 @@ web-attack-detection-siem/
 |   ├── splunk-dashboard.png
 │
 └── report/
-    └── Final_Project_Report.pdf
+    └── PROJECT_REPORT.md
 ```
 
 
